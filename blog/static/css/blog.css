@@ -1,0 +1,131 @@
+/* blog.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f8f8f8; /* Add a light background color */
+}
+
+a {
+    color: #f11b50;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #d40e3e; /* Darken the color on hover */
+}
+
+h1 {
+    font-weight: bold; /* Make the heading bold */
+    border-bottom: 2px solid #bbb;
+    padding: 0 0 10px 0;
+    color: #333; /* Set a darker color */
+}
+
+h2 {
+    font-weight: bold;
+    margin: 30px 0 20px; /* Increase margin */
+    color: #555; /* Set a slightly darker color */
+}
+
+#content {
+    float: left;
+    width: 65%; /* Wider content area */
+    padding: 0 20px 0 30px;
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+p.date {
+    color: #999;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.pagination {
+    margin: 40px 0;
+    font-weight: bold;
+}
+
+label {
+    display: block; /* Make labels block-level */
+    color: #444;
+    margin-bottom: 8px; /* Increase margin */
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 0 0 15px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-weight: bold;
+    background: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #267bb6; /* Darken the color on hover */
+}
+
+.errorlist {
+    color: #cc0033;
+    margin-left: 10px; /* Adjust margin */
+}
+
+.comment {
+    padding: 15px;
+    border-bottom: 1px solid #ddd; /* Add a border between comments */
+    background: #fff; /* White background for comments */
+    position: relative; /* Position for absolute elements within */
+}
+
+.comment img {
+    max-width: 100%; /* Make sure images don't overflow their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners to images */
+}
+
+.comment:nth-child(even) {
+    background: #f9f9f9; /* Alternate background color for even comments */
+}
+
+.comment .info {
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Example Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-element {
+    animation: fadeIn 1s ease-in-out; /* Apply the animation */
+}
